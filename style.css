@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0%;
+    font-family: cairo;
 }
 
 
@@ -83,4 +84,48 @@ label{
 }
 .reset:active{
     box-shadow: none;
+}
+
+
+.navZkr{
+    width: 60%;
+    height: 70px;
+    background-color: #ff1362;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.zkrDiv{
+    width: 60%;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #7875767e;
+    margin: auto;
+    direction: rtl;
+    margin-bottom: 50px;
+}
+
+.zkr{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #858081;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px; 
+}
+
+@media (max-width: 767px) {
+    .navZkr{
+        width: 85%;
+    }
+    .zkrDiv{
+        width: 85%;
+    }
 }
