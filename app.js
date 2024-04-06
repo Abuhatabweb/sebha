@@ -29,11 +29,15 @@ function backFromStorage(){
     circle2.style.backgroundColor = localStorage.getItem("sebha-color")
 }
 
-let colors = ["#eb7070" , "#4fe574" , "#8070eb" , "#b854d5"]
+
 colorBtn.onclick = function(){
-    let colorIndex = Math.floor(Math.random() * colors.length)
-    circle1.style.backgroundColor = colors[colorIndex]
-    circle2.style.backgroundColor = colors[colorIndex]
-    console.log(colors[colorIndex])
-    window.localStorage.setItem("sebha-color" , colors[colorIndex])
+    let colors = ["A" ,"B" , "C" , "D" , "E", "F" ,0,1,2,3,4,5,6,7,8,9]
+    let finalColor = []
+    for(let i=0 ;i < 6; i++){
+        finalColor.push(colors[Math.floor(Math.random() * colors.length)])
+    }
+    finalColor = finalColor.join("")
+    circle1.style.backgroundColor = `#${finalColor}`
+    circle2.style.backgroundColor = `#${finalColor}`
+    window.localStorage.setItem("sebha-color" , `#${finalColor}`)
 }
